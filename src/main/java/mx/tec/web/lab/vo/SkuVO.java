@@ -8,6 +8,7 @@ package mx.tec.web.lab.vo;
 
 import javax.validation.constraints.NotBlank;
 
+import mx.tec.web.lab.validation.ValidColor;
 import mx.tec.web.lab.validation.ValidSize;
 
 /**
@@ -17,6 +18,7 @@ import mx.tec.web.lab.validation.ValidSize;
  */
 public class SkuVO {
 	private long id;
+	@ValidColor
 	@NotBlank(message = "Color is mandatory")
 	private String color;
 	@ValidSize
