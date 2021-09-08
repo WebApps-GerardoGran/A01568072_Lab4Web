@@ -22,11 +22,17 @@ public class SkuVO {
 	@ValidSize
 	@NotBlank(message = "Size is mandatory")
 	private String size;
+	@NotBlank(message = "listPrice is mandatory")
 	private double listPrice;
+	@NotBlank(message = "salePrice is mandatory")
 	private double salePrice;
+	@NotBlank(message = "quantityOnHand is mandatory")
 	private long quantityOnHand;
+	@NotBlank(message = "smallImageUrl is mandatory")
 	private String smallImageUrl;
+	@NotBlank(message = "mediumImageUrl is mandatory")
 	private String mediumImageUrl;
+	@NotBlank(message = "largeImageUrl is mandatory")
 	private String largeImageUrl;
 
 	/**
